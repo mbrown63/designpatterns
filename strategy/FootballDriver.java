@@ -2,7 +2,12 @@ package strategy;
 
 import java.util.Scanner;
 
+/**
+ * Dirver class representing a introduction in the game. It welcomes the user and prompts them to execute a play or quit the game.
+ * @author Mi'Kayla Brown
+ */
 public class FootballDriver {
+
 	private Scanner scanner;
 
 	public FootballDriver() {
