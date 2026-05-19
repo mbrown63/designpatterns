@@ -29,7 +29,7 @@ public class CarLotDriver {
 			}
 			else if(type.equals("c")){
 				return new Car();
-			} else if(type == "q"){
+			} else if(type.equals("q")){
 				return null;
 			}
 			System.out.println("Invalid input");
@@ -41,7 +41,6 @@ public class CarLotDriver {
 				"What color would you like to paint your Vehicle (Enter either Red, Green, Purple, Blue, Yellow, Cyan, or None: ");
 		return scanner.nextLine().toLowerCase();
 	}
-
 	public static void main(String[] args) {
 		CarLotDriver carLot = new CarLotDriver();
 		carLot.runDriver();

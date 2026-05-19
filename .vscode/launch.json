@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CarLotDriver",
+            "request": "launch",
+            "mainClass": "decorator.CarLotDriver",
+            "projectName": "designpatterns_75f31e2a"
+        },
+        {
+            "type": "java",
             "name": "SocialDriver",
             "request": "launch",
             "mainClass": "observer.SocialDriver",

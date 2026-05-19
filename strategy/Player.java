@@ -23,13 +23,24 @@ public abstract class Player {
         this.team = team;
     }
 
+    /**
+     * Sets the play behavior for the player.
+     */
     protected abstract void setPlayBehavior();
 
+    /**
+     * Executes the player's play based on the current play behavior.
+     */
     public void play() {
         setPlayBehavior();
         playBehavior.play();
     }
 
+
+    /**
+     * Returns a string representation of the player.
+     * @return a string containing the player's first name, last name, and team
+     */
     public String toString() {
         return firstName + " " + lastName + " - " + team;
     }

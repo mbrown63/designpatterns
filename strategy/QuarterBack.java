@@ -12,10 +12,19 @@ public class QuarterBack extends Player {
     private PlayBehavior throwBehavior = new ThrowBehavior();
     private PlayBehavior runBehavior = new RunBehavior();
     
+    /**
+     * Initializes the quarter back player with the specified first name, last name, and team.
+     * @param firstName the player's first name
+     * @param lastName the player's last name
+     * @param team the player's team
+     */
     public QuarterBack(String firstName, String lastName, String team) {
         super(firstName, lastName, team);
     }
 
+    /**
+     * Sets the play behavior for the quarter back player.
+     */
     protected void setPlayBehavior() {
         int randomNum = random.nextInt(2);
         if (randomNum == 0) {
